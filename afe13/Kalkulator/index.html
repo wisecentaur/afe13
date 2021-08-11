@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampli Калькулятор</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="Kalkulator">
+        <div class="container kalkulator-content">
+            <header class="kalkulator-content__header">
+                <h1>Калькулятор</h1>
+            </header>
+            <main class="kalkulator-content__main">
+                <div class="kalkulator-content__main__input">
+                    <div class="kalkulator-content__main__input__pair">
+                        <label for="aNumber">Вкажіть число "A"</label>
+                        <input type="text" name="aNumber" id="aNumber" placeholder="A">
+                    </div>
+                    <div class="kalkulator-content__main__input__pair">
+                        <label for="bNumber">Вкажіть число "B"</label>
+                        <input max="20" type="text" name="bNumber" id="bNumber" placeholder="B">
+                    </div>
+                </div>
+                <div class="kalkulator-content__main__operation">
+                    <select id="selectOperation" class="kalkulator-content__main__operation__select">
+                        <option value="+" id="btnPlus" class="kalkulator-content__main__operation__btn">Додати</option>
+                        <option value="-" id="btnMinus" class="kalkulator-content__main__operation__btn">Відняти</option>
+                        <option value="*" id="btnMultiply" class="kalkulator-content__main__operation__btn">Помножити</option>
+                        <option value="/" id="btnDivide" class="kalkulator-content__main__operation__btn">Ділити</option>
+                        <option value=">" id="btnBigger" class="kalkulator-content__main__operation__btn">Порівняти "Більше"</option>
+                        <option value="" id="btnEqual" class="kalkulator-content__main__operation__btn">Порівняти "Дорівнює"</option>
+                    </select>
+                    <button onclick="operationResult()" class="btnOperation">
+                        Виконати
+                    </button>
+
+                </div>
+            </main>
+            <footer class="kalkulator-content__footer">
+                <div id="operationResult" class="kalkulator-content__footer__result">
+                    <h2>Результат: </h2>
+                    <input readonly type="text" id="result">
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>

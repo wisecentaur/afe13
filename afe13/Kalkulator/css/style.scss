@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#Kalkulator{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kalkulator-content{
+    background-color: rgb(241, 243, 140);
+    height: 400px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__header{
+        font-size: 42px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #080808;
+    }
+    &__main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 220px;
+        &__input{
+
+            &__pair{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+
+                label{
+                    font-size: 18px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                input{
+                    height: 40px;
+                    padding-left: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__operation{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 110px;
+            margin-top: 5%;
+
+            &__select{
+                height: 40px;
+                width: 170px;
+            }
+
+            .btnOperation{
+                height: 40px;
+                width: 170px;
+            }
+        }
+    }
+    &__footer{
+        height: 80px;
+        &__result{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            input{
+                background: none;
+                outline: none;
+                border: 0;
+                font-size: 34px;
+
+                height: 40px;
+                width: 250px;
+                text-align: center;
+            }
+            h2{
+                font-size: 34px;
+            }
+        }
+    }
+}
